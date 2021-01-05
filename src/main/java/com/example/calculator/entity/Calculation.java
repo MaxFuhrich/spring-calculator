@@ -1,9 +1,11 @@
 package com.example.calculator.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.data.annotation.Id;
 
 public class Calculation {
 
+    @JsonIgnore
     @Id
     public String id;
     private float a;
